@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #efefef;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* container class design*/
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/* nav bar design*/
+nav,
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #151d38;
+  color: #fff;
+}
+
+.nav-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item-container {
+  display: flex;
+  margin-left: auto;
+}
+
+.brand h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.nav-item {
+  margin-left: 24px;
+}
+
+/* TODO set individual link style */
+.nav-item a,
+.nav-item a:hover,
+.nav-item a:visited,
+x .nav-item a:active {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* porfile card section */
+.profile-card-container {
+  margin-top: 50px;
+  width: 100%;
+  height: 470px;
+  background-color: #fff;
+  box-shadow: 0px 0px 05px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+}
+
+.profile-pic-container {
+  width: 470px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.image-square-container {
+  width: 370px;
+  height: 370px;
+  border: 5px solid #151d38;
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.image-circle-container {
+  width: 305px;
+  height: 305px;
+  border: 5px solid #151d38;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-circle-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-info-container {
+  width: 930px;
+}
+.profile-info {
+  margin-top: 55px;
+  margin-left: 50px;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.profile-title {
+  font-size: 600;
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #555555;
+  margin-top: 7px;
+}
+
+.social-links {
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.social-links img {
+  margin-right: 10px;
+}
+
+.skill-chips {
+  display: flex;
+  margin-top: 20px;
+}
+
+.skill-chip {
+  background-color: #151038;
+  color: #fff;
+  padding: 10px 7px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 10px;
+}
+
+.profile-bio {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #555555;
+  margin-top: 42px;
+  margin-right: 147px;
+}
+
+/* My skill section*/
+
+.my-skills-section,
+.my-experience-section {
+  width: 100%;
+  height: 490px;
+  margin-top: 50px;
+  background-color: #fff;
+  box-shadow: 0px 0px 05px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 35px 40px;
+}
+
+.section-heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skill-item-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.icon-container img {
+  border-radius: 3px;
+  overflow: hidden;
+  width: 80px;
+}
+
+.text-container {
+  margin-left: 40px;
+}
+
+.text-container h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  color: #333;
+}
+
+.text-container h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: #555;
+  margin-top: 6px;
+}
+
+.text-container p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #555;
+  margin-top: 12px;
+}
+
+/* My experience section*/
+.experience-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.experience-item,
+.portfolio-item {
+  margin-top: 22px;
+}
+.experience-item h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #333;
+}
+
+.experience-item h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #333;
+}
+
+.experience-item p {
+  width: 446px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #555;
+}
+
+/* My portfolio section*/
+.my-portfolio-section {
+  width: 100%;
+  margin: 50px 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 05px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 35px 40px;
+}
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 10px;
+}
+
+.portfolio-item {
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+
+.portfolio-item h3,
+p {
+  padding: 8px 20px;
+
+  letter-spacing: 0.04em;
+}
+.portfolio-item h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+.portfolio-item p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 16px;
+  width: 360px;
+}
